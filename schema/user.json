@@ -1,0 +1,25 @@
+{
+  "fields": {
+    "id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": "null"
+    },
+    "name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": "null"
+    }
+  },
+  "relationships": {
+    "posts": {
+      "default": "null",
+      "relation": "hasMany",
+      "model": "Post"
+    }
+  }
+}

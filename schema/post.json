@@ -1,0 +1,45 @@
+{
+  "fields": {
+    "id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": "null"
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": "null"
+    },
+    "body": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": "null"
+    },
+    "published": {
+      "type": [
+        "boolean"
+      ],
+      "default": false
+    },
+    "userId": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": "null"
+    }
+  },
+  "relationships": {
+    "author": {
+      "default": "null",
+      "relation": "belongsTo",
+      "model": "User"
+    }
+  }
+}
