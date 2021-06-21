@@ -3,11 +3,9 @@ to: src/repositories/<%= Name %>Repository.ts
 force: true
 ---
 
-import { OrionRepository } from '@patcarter883/vuex-orm-orion-next'
+import { Repository } from '@vuex-orm/core'
 import <%= Name %> from 'src/models/<%= Name %>'
-import <%= Name %>Resource from 'src/resources/<%= Name %>Resource'
 
-export default class <%= Name %>Repository extends OrionRepository<<%= Name %>> {
+export default class <%= Name %>Repository extends Repository<<%= Name %>> {
   use = <%= Name %>
-  orionModel = <%= Name %>Resource
 }
